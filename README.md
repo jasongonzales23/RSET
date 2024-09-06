@@ -1,13 +1,18 @@
 # Really Simple Event Tracker
 
 ## Get Started
+
 - Download the codez
 - Install deps w/ `pnpm i` (if you're not using pnpm I accept your apology)
 
 ## Use the API
-Endpoints and post bodies (as applicable)
+
+There's a postman collection in the repo, but a short description of the API follows.
+
+Endpoints and post bodies (as applicable):
 
 http://localhost:4300/track-view
+
 ```
 {
         "user_id": 99,
@@ -37,6 +42,7 @@ http://localhost:4300/track-view
 ```
 
 http://localhost:4300/track-book-demo
+
 ```
 {"user_id": 9}
 ```

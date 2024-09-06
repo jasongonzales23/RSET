@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "a6ea80b8-18c0-4655-8d43-eaf27a1cf906",
+		"name": "event_tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2492247"
+	},
+	"item": [
+		{
+			"name": "Moving Average Views",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/moving-average-views/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"moving-average-views",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moving Average Views By Attr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/moving-average-views/3?is_logged_in=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"moving-average-views",
+						"3"
+					],
+					"query": [
+						{
+							"key": "is_logged_in",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track Demos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\": 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4300/track-book-demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"track-book-demo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track Views",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"user_id\": 99,\n        \"attrs\": {\n          \"on_mobile_device\": false,\n          \"is_located_in_usa\": true,\n          \"is_first_time_visitor\": true,\n          \"is_returning_user\": true,\n          \"email_verified\": false,\n          \"has_enterprise_business_domain\": true,\n          \"did_click_on_cta\": true,\n          \"did_click_on_ad\": false,\n          \"is_subscribed_to_newsletter\": true,\n          \"has_completed_profile\": true,\n          \"is_active_in_last_30_days\": false,\n          \"is_using_incognito_mode\": false,\n          \"is_logged_in\": true,\n          \"is_using_ad_blocker\": true,\n          \"has_multiple_devices\": true,\n          \"is_from_referral_source\": false,\n          \"has_downloaded_resource\": false,\n          \"has_filled_out_contact_form\": false,\n          \"is_preferred_language_english\": false,\n          \"is_on_slow_network\": true\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4300/track-view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"track-view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seed Data 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/seed-data/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"seed-data",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seed Data 100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/seed-data/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"seed-data",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Views Last 24 Hours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/get-views-last-24-hours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"get-views-last-24-hours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Demos Last 24 Hours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/get-demos-last-24-hours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"get-demos-last-24-hours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/best-predictor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"best-predictor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
